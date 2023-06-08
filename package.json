@@ -1,6 +1,6 @@
 {
-  "name": "nsfwjs",
-  "version": "2.4.2",
+  "name": "@clicks/nsfwjs",
+  "version": "3.0.0",
   "unpkg": "dist/nsfwjs.min.js",
   "description": "Detect NSFW content client-side",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/infinitered/nsfwjs.git"
+    "url": "git+https://github.com/ClicksMinutePer/nsfwjs.git"
   },
   "dependencies": {
     "@clicks/gif-frames": "^2.0.2"
@@ -54,10 +54,11 @@
     "Tensorflow",
     "JS"
   ],
-  "author": "Gant Laborde",
+  "author": "Clicks <admin@clicks.codes> (https://clicks.codes)",
+  "contributors":[{"name":"Gant Laborde"}],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/infinitered/nsfwjs/issues"
+    "url": "https://github.com/ClicksMinutePer/nsfwjs/issues"
   },
   "homepage": "https://nsfwjs.com"
 }
