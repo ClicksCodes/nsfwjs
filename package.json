@@ -1,6 +1,6 @@
 {
   "name": "@clicks/nsfwjs",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "unpkg": "dist/nsfwjs.min.js",
   "description": "Detect NSFW content client-side",
   "main": "dist/index.js",
