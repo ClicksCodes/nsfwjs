@@ -1,6 +1,6 @@
 import * as tf from "@tensorflow/tfjs";
 import { NSFW_CLASSES } from "./nsfw_classes";
-import gifFrames, { GifFrameCanvas, GifFrameBuffer } from "@nsfw-filter/gif-frames";
+import gifFrames, { GifFrameCanvas, GifFrameBuffer } from "@clicks/gif-frames";
 
 export type frameResult = {
   index: number;

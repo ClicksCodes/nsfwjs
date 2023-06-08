@@ -5,14 +5,14 @@
   "description": "Detect NSFW content client-side",
   "main": "dist/index.js",
   "scripts": {
-    "test": "yarn build && jest",
+    "test": "npm run build && jest",
     "lint": "tslint -p . -t verbose",
-    "shipit": "yarn build && yarn scriptbundle && yarn minbundle && np",
+    "shipit": "npm run build && npm run scriptbundle && npm run minbundle && np",
     "build": "tsc --skipLibCheck",
     "toc": "doctoc .",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
-    "prep": "yarn && yarn build && cd example/nsfw_demo/ && yarn add ../../ && cd -",
+    "prep": "npm i && npm run build && cd example/nsfw_demo/ && npm run add ../../ && cd -",
     "scriptbundle": "browserify ./dist/nsfwjs.js --standalone nsfwjs --outfile ./dist/bundle.js",
     "minbundle": "terser dist/bundle.js --compress --mangle --output dist/nsfwjs.min.js"
   },
@@ -21,13 +21,13 @@
     "url": "git+https://github.com/infinitered/nsfwjs.git"
   },
   "dependencies": {
-    "@nsfw-filter/gif-frames": "1.0.2"
+    "@clicks/gif-frames": "^2.0.2"
   },
   "peerDependencies": {
-    "@tensorflow/tfjs": "^4.0.0"
+    "@tensorflow/tfjs": "^4.6.0"
   },
   "devDependencies": {
-    "@tensorflow/tfjs": "^4.0.0",
+    "@tensorflow/tfjs": "^4.6.0",
     "@types/jest": "^28.1.6",
     "all-contributors-cli": "^6.20.0",
     "babel-core": "^6.26.3",
@@ -37,9 +37,9 @@
     "jest": "^28.1.3",
     "jpeg-js": "^0.4.4",
     "node-fetch": "^2.6.7",
-    "np": "5.0.2",
+    "np": "8.0.2",
     "seedrandom": "~3.0.5",
-    "terser": "^5.14.2",
+    "terser": "^5.17.7",
     "ts-jest": "^28.0.7",
     "ts-node": "~10.9.1",
     "tslint": "~6.1.3",
